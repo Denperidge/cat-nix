@@ -1,6 +1,6 @@
-{ lib, stdenv, fetchurl, autoPatchelfHook }:
+{ pkgs, config, ... }:
 
-stdenv.mkDerivation rec {
+with pkgs; stdenv.mkDerivation rec {
   pname = "caddy-plugin";
   version = "0.1.0";
 
